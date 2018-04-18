@@ -2,7 +2,7 @@ FROM ubuntu
 
 RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup && \
     apt-get update && \
-    apt-get install -y cron python3-pip jq && \
+    apt-get install -y cron python3-pip jq postgresql-client && \
     pip3 install awscli && \
     rm -rf /var/lib/apt/lists/*
 
