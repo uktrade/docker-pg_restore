@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/bash -x
 
 env -
 export $(cat /.env | xargs)
